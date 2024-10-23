@@ -1,0 +1,21 @@
+create table Chef(
+chefId int primary key,
+chefName varchar(15) not null,
+Address varchar(15));
+
+create table resturant(
+rID int primary key ,
+rName varchar(15) not null,
+ingredeints varchar(15),
+directions varchar (15), 
+cID int,
+FOREIGN KEY(cID) refrences Chef(chefID) --- for foreign key 
+FOREIGN KEY(cID) refrences (chefID) on delete set null);
+
+insert into Chef 
+values('1', 'Raj','Mathura'),
+      ( '2', 'Ram','Agra');
+
+cID mein 3 nhi jayega kyonki 3 no. ka chef koi exist nhi krta ; null ja skta hai 
+tum ab delete bhi nhi kr skte jabta chefID 1 and 2 hai .
+referencial integrity= foreign key 

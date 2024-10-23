@@ -1,0 +1,11 @@
+create table college(
+cName varchar(10),
+cCity varchar(10),
+enrollment int,
+primary key(cName, cCity));
+
+insert into college
+values('IIT','Delhi',12000),
+      ('IIT', 'Kanpur',10000),
+      ('IIT','Delhi',15000 );
+

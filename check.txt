@@ -1,0 +1,5 @@
+Create Table Student (
+roll_no int Primary Key ,
+Sname varchar(10) not null , 
+linkedin varchar(50) unique,
+mobile_no numeric(10) unique not null );
